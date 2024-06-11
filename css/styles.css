@@ -1,7 +1,9 @@
 body {
+     min-height: 100vh; 
+     overflow-y: scroll;
     font-family: 'Lato', sans-serif;
     font-size: 16px;
-    overflow: hidden; /* Hide overflow for body when active */
+  
     z-index: -1; /* Set z-index for body when active */
 }
 
