@@ -1,56 +1,11 @@
 body {
     font-family: 'Lato', sans-serif;
-    font-size: 16px
+    font-size: 16px;
+    overflow: hidden; /* Hide overflow for body when active */
+    z-index: -1; /* Set z-index for body when active */
 }
 
-body.active {
-    overflow: hidden;
-    z-index: -1
-}
-
-.no-js #experience-timeline>div {
-    background: #fff;
-    padding: 10px;
-    margin-bottom: 10px;
-    border: 1px solid #dcd9d9
-}
-
-.no-js #experience-timeline>div h3 {
-    font-size: 1.5em;
-    font-weight: 300;
-    color: #374054;
-    display: inline-block;
-    margin: 0
-}
-
-.no-js #experience-timeline>div h4 {
-    font-size: 1.2em;
-    font-weight: 300;
-    color: #7e8890;
-    margin: 0 0 15px 0
-}
-
-.no-js #experience-timeline>div p {
-    color: #74808a;
-    font-size: 0.9em;
-    margin: 0
-}
-
-.no-js #experience-timeline:before,
-.no-js #experience-timeline:after {
-    content: none
-}
-
-@keyframes dropHeader {
-    0% {
-        transform: translateY(-100%)
-    }
-
-    100% {
-        transform: translateY(0)
-    }
-}
-
+/* Header styles */
 header {
     position: absolute;
     top: 0;
@@ -61,7 +16,7 @@ header {
     animation-name: dropHeader;
     animation-iteration-count: 1;
     animation-timing-function: ease;
-    animation-duration: 0.75s
+    animation-duration: 0.75s;
 }
 
 header ul {
@@ -71,42 +26,39 @@ header ul {
     padding: 10px;
     margin: 0;
     border-bottom-right-radius: 4px;
-    border-bottom-left-radius: 4px
+    border-bottom-left-radius: 4px;
 }
 
 header li {
-    display: inline-block
+    display: inline-block;
 }
 
 header a {
     display: block;
     color: #3498db;
-    padding: 10px
+    padding: 10px;
 }
 
 header a:hover {
     color: #217dbb;
     text-decoration: none;
     background: #eee;
-    border-radius: 4px
+    border-radius: 4px;
 }
 
 header a:focus {
     color: #3498db;
-    text-decoration: none
+    text-decoration: none;
 }
 
-header.active {
-    display: block
-}
-
+/* Sticky header */
 header.sticky {
     position: fixed;
-    z-index: 999
+    z-index: 999;
 }
 
 #menu.active {
-    display: block
+    display: block;
 }
 
 #mobile-menu-open {
@@ -120,7 +72,7 @@ header.sticky {
     z-index: 20;
     padding: 0 7px;
     border-radius: 4px;
-    background: #fff
+    background: #fff;
 }
 
 #mobile-menu-close {
@@ -132,21 +84,25 @@ header.sticky {
     padding-right: 15px;
     padding-top: 10px;
     cursor: pointer;
-    color: #3498db
+    color: #3498db;
 }
 
 #mobile-menu-close span {
     font-size: 0.5em;
-    text-transform: uppercase
+    text-transform: uppercase;
 }
 
 #mobile-menu-close i {
-    vertical-align: middle
+    vertical-align: middle;
 }
 
+/* Footer styles */
 footer {
-    padding: 50px 0
+    padding: 50px 0;
 }
+
+/* Other existing styles... */
+
 
 .copyright {
     padding-top: 20px
