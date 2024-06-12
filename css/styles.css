@@ -63,39 +63,48 @@ header.sticky {
     display: block;
 }
 #menu {
-    display: block; /* Always show menu by default */
+    display: block; 
 }
 
 #menu-toggle {
-    display: none; /* Hide menu toggle icon by default */
+    display: none; 
 }
 
 @media screen and (max-width: 768px) {
     #menu {
-        display: none; /* Hide menu on mobile */
+        display: none; 
     }
 
     #menu:target {
-        display: block; /* Show menu when targeted */
+        display: block; 
         position: absolute;
-        top: 60px; /* Adjust as needed */
+        top: 60px; 
         left: 0;
         width: 100%;
-        background-color: #ffffff; /* Background color for menu */
+        background-color: #ffffff; 
         padding: 15px;
-        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add shadow for menu */
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
     }
 
     #menu-close {
-        display: block; /* Show menu close icon on mobile */
+        display: block; 
         text-align: right;
     }
 
     #menu-toggle {
-        display: block; /* Show menu toggle icon on mobile */
+        display: block;
+        cursor: pointer;
+        position: fixed;
+        right: 15px;
+        top: 10px;
+        color: #3498db;
+        font-size: 1.5em;
+        z-index: 20;
+        padding: 0 7px;
+        border-radius: 4px;
+        background: #fff;
     }
 }
-
 
 /* #mobile-menu-open {
     display: none;
