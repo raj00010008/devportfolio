@@ -59,9 +59,7 @@ header.sticky {
     z-index: 999;
 }
 
-#menu.active {
-    display: block;
-}
+
 #menu {
     display: block; 
 }
