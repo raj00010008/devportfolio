@@ -63,9 +63,7 @@ header.sticky {
     display: block;
 }
 
-#menu {
-    display: none; 
-}
+
 
 
 #menu-toggle {
@@ -73,15 +71,19 @@ header.sticky {
 }
 
 
+#menu {
+    display: block; 
+}
+
 @media screen and (max-width: 768px) {
-    #menu-toggle {
-        display: block; 
+    #menu {
+        display: none; 
     }
 
     #menu:target {
         display: block; 
         position: absolute;
-        top: 60px;
+        top: 60px; 
         left: 0;
         width: 100%;
         background-color: #ffffff; 
