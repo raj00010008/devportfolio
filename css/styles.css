@@ -214,8 +214,10 @@ footer {
     background: url(../images/lead-bg.png);
     background-size: cover;
     padding: 15px;
-    overflow: hidden
+    overflow: hidden;
+    background-color: rgba(0, 0, 0, 0.5);
 }
+
 
 #lead-content {
     position: absolute;
