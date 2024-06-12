@@ -63,6 +63,38 @@ header.sticky {
     display: block;
 }
 
+#menu {
+    display: none; 
+}
+
+
+#menu-toggle {
+    display: none; 
+}
+
+
+@media screen and (max-width: 768px) {
+    #menu-toggle {
+        display: block; 
+    }
+
+    #menu:target {
+        display: block; 
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        background-color: #ffffff; 
+        padding: 15px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+    }
+
+    #menu-close {
+        display: block; 
+        text-align: right;
+    }
+}
+
 #mobile-menu-open {
     display: none;
     cursor: pointer;
