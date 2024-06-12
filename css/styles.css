@@ -62,42 +62,42 @@ header.sticky {
 #menu.active {
     display: block;
 }
-
-
-
-
-#menu-toggle {
-    display: none; 
+#menu {
+    display: block; /* Always show menu by default */
 }
 
-
-#menu {
-    display: block; 
+#menu-toggle {
+    display: none; /* Hide menu toggle icon by default */
 }
 
 @media screen and (max-width: 768px) {
     #menu {
-        display: none; 
+        display: none; /* Hide menu on mobile */
     }
 
     #menu:target {
-        display: block; 
+        display: block; /* Show menu when targeted */
         position: absolute;
-        top: 60px; 
+        top: 60px; /* Adjust as needed */
         left: 0;
         width: 100%;
-        background-color: #ffffff; 
+        background-color: #ffffff; /* Background color for menu */
         padding: 15px;
-        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add shadow for menu */
     }
 
     #menu-close {
-        display: block; 
+        display: block; /* Show menu close icon on mobile */
         text-align: right;
+    }
+
+    #menu-toggle {
+        display: block; /* Show menu toggle icon on mobile */
     }
 }
 
-#mobile-menu-open {
+
+/* #mobile-menu-open {
     display: none;
     cursor: pointer;
     position: fixed;
@@ -130,7 +130,7 @@ header.sticky {
 
 #mobile-menu-close i {
     vertical-align: middle;
-}
+} */
 
 /* Footer styles */
 footer {
